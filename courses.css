@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 50px orangered;
+    transform: scale(1.1);
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size:18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom:3px solid orangered;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size:16px;
+    letter-spacing: 1px;
+    font-weight:600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+    color: white;
+}
+.img-box {
+    position: left;
+    width: 30%;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 500px;
+    }
+.img-box img:hover{
+    background-color: white;
+    color: orangered;
+    border: 5px solid orangered;
+    }
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:12% 8%;
+    gap: 10em;
+    background: black;
+    line-height: 30px;
+}
+.courses.img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+    border-radius: 50%;
+}
+.courses-content h1{
+    text-align: left;
+    font-size: 42px;
+    color: white;
+}
+.courses-content h2{
+    font-size: 62px;
+    color: white;
+}
+.courses-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+    line-height: 40px;
+}
+.btn{
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: orangered;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+.computer-courses img{
+    border-radius: 50%;
+    padding-left: 0px;
+}
+.computer-courses img:hover{
+    background-color: white;
+    color: orangered;
+    border: 5px solid orangered;
+}
+.computer-courses img{
+    position: relative;
+    width: 550px;
+    height: 800px;
+    padding-right: 0px;
+    box-shadow: 0 0 25px rgb(250, 154, 119),
+                0 0 50px rgb(246, 179, 154);
+    border-radius: 50%;
+}
+.computer-courses{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 70px;
+    background-color: rgb(248, 196, 178);
+}
+.computer-courses{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom:25px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;    
+}
+.computer-courses h1{
+    font-size:32px;
+    padding-left: 5%;s
+    color: rgb(0, 0, 0);
+}
+.computer-courses h1:hover{
+    color: orangered;
+    text-shadow: 0 0 10px orangered;
+    transform: scale(1.0);
+}
+.computer-courses h2{
+    font-size:24px;
+    padding-left: 5%;
+}
+.computer-courses p{
+    font-size:16px;
+    padding-left: 5%;
+}
+.other-courses img{
+    border-radius: 50%;
+    padding-left: 0px;
+}
+.other-courses img:hover{
+    background-color: white;
+    color: orangered;
+    border: 5px solid orangered;
+}
+.other-courses img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding-right: 0px;
+    box-shadow: 0 0 25px rgb(250, 154, 119),
+                0 0 50px rgb(246, 179, 154);
+    border-radius: 50%;
+}
+.other-courses{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(248, 196, 178);
+}
+.other-courses{
+    text-align: left;
+    padding-left: 70px;
+    padding-bottom:25px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;    
+}
+.other-courses h1{
+    font-size:32px;
+    padding-left: 15%;
+    color: rgb(0, 0, 0);
+}
+.other-courses h1:hover{
+    color: orangered;
+    text-shadow: 0 0 10px orangered;
+    transform: scale(1.0);
+}
+.other-courses h2{
+    font-size:24px;
+    padding-left: 5%;
+}
+.other-courses p{
+    font-size:16px;
+    padding-left: 5%;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social a img{
+    position: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 15px rgb(250, 154, 119),
+                0 0 15px rgb(246, 179, 154);
+    border-radius: 100%;
+}
+.footer .social a:hover{
+    color: orangered;
+    border: 6px solid orangered;
+    border-radius: 100px;
+  
+}
+.footer ul{
+    margin-top: 0;
+    padding:0;
+    font-size: 18px;
+    line-height:1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top:15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
